@@ -33,7 +33,7 @@ const forecast = (lat, long, cb) => {
           // const body = response.body
            cb(undefined, body.daily.data[0].summary+" It is currently "+body.currently.temperature+" degrees out."+
             " Maximum temperature "+ body.daily.data[0].temperatureHigh +" Minimum temperature "+ body.daily.data[0].temperatureLow +
-            " There is a "+body.currently.precipProbability+"% chance of rain")
+            ". There is a "+body.currently.precipProbability+"% chance of rain")
        }
      }) 
   }
